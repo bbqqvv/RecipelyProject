@@ -22,7 +22,7 @@ data class IngredientInRecipe(
 
 fun IngredientInRecipe.toRecipes(accountId: String?): List<Recipe> {
     return recipes.map {
-        Log.d("An ne", it.toString())
+        Log.d("Van Bui", it.toString())
         it.recipe.toRecipe(accountId)
     }
 }

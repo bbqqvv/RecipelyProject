@@ -10,12 +10,8 @@ import com.anbui.recipely.core.database.entities.LikeEntity
 import com.anbui.recipely.core.database.entities.RecentEntity
 import com.anbui.recipely.core.database.entities.RecipeEntity
 import com.anbui.recipely.core.database.entities.StepEntity
-import com.anbui.recipely.core.database.relations.IngredientInRecipe
-import com.anbui.recipely.core.database.relations.LikeAndRecipe
-import com.anbui.recipely.core.database.relations.RecentAndRecipe
-import com.anbui.recipely.core.database.relations.RecipeAndOwner
 import com.anbui.recipely.core.database.entities.RecipeIngredientCrossRef
-import com.anbui.recipely.core.database.relations.RecipeWithIngredient
+import com.anbui.recipely.core.database.relations.*
 import kotlinx.coroutines.flow.Flow
 
 @Dao
@@ -23,20 +19,19 @@ interface RecipeDao {
     @Insert
     suspend fun insertRecipe(recipe: RecipeEntity)
 
-    @Query("select * from Recipe")
+    @Query("SELECT * FROM Recipe")
     fun getAllRecipeEntities(): Flow<List<RecipeEntity>>
 
     @Transaction
-    @Query("Select * from Recipe  where _id = :recipeId")
+    @Query("SELECT * FROM Recipe WHERE _id = :recipeId")
     suspend fun getIngredientOfRecipe(recipeId: String): List<RecipeWithIngredient>
 
     @Transaction
-    @Query("SELECT * from recipe r  ")
+    @Query("SELECT * FROM Recipe")
     fun getAllRecipes(): Flow<List<RecipeAndOwner>>
 
-
     @Transaction
-    @Query("SELECT * from recipe r  WHERE _id = :recipeId")
+    @Query("SELECT * FROM Recipe WHERE _id = :recipeId")
     fun getRecipe(recipeId: String): Flow<RecipeAndOwner>
 
     @Upsert
@@ -48,55 +43,54 @@ interface RecipeDao {
     @Upsert
     suspend fun addRecent(recentEntity: RecentEntity)
 
-    @Query("SELECT * from Recent WHERE recipe_id = :recipeId AND account_id = :accountId")
+    @Query("SELECT * FROM Recent WHERE recipe_id = :recipeId AND account_id = :accountId")
     suspend fun getRecentByAccountAndRecipe(accountId: String, recipeId: String): List<RecentEntity>
 
     @Transaction
-    @Query("SELECT * from Recipe WHERE owner_id = :accountId")
+    @Query("SELECT * FROM Recipe WHERE owner_id = :accountId")
     fun getRecipeByAccountId(accountId: String): Flow<List<RecipeAndOwner>>
 
-    @Query("DELETE  FROM Recipe WHERE _id = :recipeId")
+    @Query("DELETE FROM Recipe WHERE _id = :recipeId")
     suspend fun deleteRecipe(recipeId: String)
 
     @Query("SELECT recipe_id FROM `Like` WHERE account_id = :accountId")
     fun getFavouriteRecipeIds(accountId: String): Flow<List<String>>
 
     @Transaction
-    @Query("SELECT * from recipe r  WHERE _id IN (:recipeIds)")
+    @Query("SELECT * FROM Recipe WHERE _id IN (:recipeIds)")
     fun getRecipes(recipeIds: List<String>): Flow<List<RecipeAndOwner>>
 
     @Transaction
-    @Query("SELECT * FROM `LIKE` WHERE account_id = :accountId")
+    @Query("SELECT * FROM `Like` WHERE account_id = :accountId")
     fun getFavouriteRecipes(accountId: String): Flow<List<LikeAndRecipe>>
 
     @Transaction
-    @Query("SELECT * FROM Recent  WHERE account_id = :accountId")
+    @Query("SELECT * FROM Recent WHERE account_id = :accountId")
     fun getAllRecent(accountId: String): Flow<List<RecentAndRecipe>>
 
-    @Transaction
-    @Query("SELECT * from recipe r  WHERE title LIKE  '%' || :searchText || '%'")
-    suspend fun searchRecipe(searchText: String): List<RecipeAndOwner>
 
-    @Transaction
-    @Query("SELECT * from Ingredient r  WHERE name LIKE  '%' || :searchText || '%' LIMIT 4")
-    suspend fun searchRecipesByIngredient(searchText: String): IngredientInRecipe?
-
-    @Query("SELECT * from Ingredient r  WHERE name LIKE  '%' || :searchText || '%' LIMIT 4")
-    suspend fun searchIngredient(searchText: String): List<IngredientEntity>
-
-    @Query("SELECT * from Ingredient r  WHERE _id = :ingredientId")
+    @Query("SELECT * FROM Ingredient WHERE _id = :ingredientId")
     suspend fun getIngredientById(ingredientId: String): IngredientEntity?
 
     @Transaction
     @Insert
-    suspend fun insertContains(recipeIngredientCrossRef: List<RecipeIngredientCrossRef>)
+    suspend fun insertContains(it: List<RecipeIngredientCrossRef>)
 
     @Transaction
     @Insert
-    suspend fun insertSteps(steps: List<StepEntity>)
+    suspend fun insertSteps(it: List<StepEntity>)
+
+
+    @Transaction
+    @Query("SELECT * FROM Recipe WHERE title LIKE '%' || :searchText || '%'")
+    suspend fun searchRecipe(searchText: String): List<RecipeAndOwner>
+
+    @Transaction
+    @Query("SELECT * FROM Ingredient WHERE name LIKE '%' || :searchText || '%'")
+    suspend fun searchRecipesByIngredient(searchText: String): IngredientInRecipe?
+
+
+    @Transaction
+    @Query("SELECT * FROM Ingredient WHERE name LIKE '%' || :searchText || '%'")
+    suspend fun searchIngredient(searchText: String): List<IngredientEntity>
 }
-
-
-
-
-

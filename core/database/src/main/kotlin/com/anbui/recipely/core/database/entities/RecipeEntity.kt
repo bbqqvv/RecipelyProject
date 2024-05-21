@@ -2,17 +2,18 @@ package com.anbui.recipely.core.database.entities
 
 import androidx.room.ColumnInfo
 import androidx.room.Entity
+import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
 
 @Entity(
     tableName = "Recipe",
     foreignKeys = [
-//        ForeignKey(
-//            entity = AccountEntity::class,
-//            parentColumns = arrayOf("_id"),
-//            childColumns = arrayOf("owner_id"),
-// //            onDelete = ForeignKey.CASCADE,
-//        ),
+        ForeignKey(
+            entity = AccountEntity::class,
+            parentColumns = arrayOf("_id"),
+            childColumns = arrayOf("owner_id"),
+            onDelete = ForeignKey.CASCADE
+        )
     ]
 )
 data class RecipeEntity(

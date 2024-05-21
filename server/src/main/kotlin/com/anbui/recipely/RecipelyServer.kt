@@ -1,4 +1,4 @@
-package com.anbui.recipely
+    package com.anbui.recipely
 
 import com.anbui.recipely.database.configKoin
 import com.anbui.recipely.database.configRouting

@@ -28,19 +28,19 @@ class CartViewModel @Inject constructor(
     )
 
     val currentAccount = accountRepository.getCurrentAccount()
-            .onEach {
-                _addressState.emit(
-                    AddressScreenState(
-                        street = it.street,
-                        district = it.district,
-                        province = it.province,
-                    )
+        .onEach {
+            _addressState.emit(
+                AddressScreenState(
+                    street = it.street,
+                    district = it.district,
+                    province = it.province,
                 )
-            }.stateIn(
-                viewModelScope,
-                SharingStarted.WhileSubscribed(1000),
-                null
             )
+        }.stateIn(
+            viewModelScope,
+            SharingStarted.WhileSubscribed(1000),
+            null
+        )
 
     private val _success = MutableStateFlow(false)
     val success = _success.asStateFlow()
@@ -84,7 +84,7 @@ class CartViewModel @Inject constructor(
 
     fun updateAddress() {
         viewModelScope.launch {
-            with(_addressState.value){
+            with(_addressState.value) {
                 currentAccount.value?.let { account ->
                     accountRepository.updateAccount(
                         account.copy(

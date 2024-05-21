@@ -4,8 +4,10 @@ package com.anbui.recipely.feature.search
 
 import androidx.lifecycle.SavedStateHandle
 import androidx.lifecycle.ViewModel
+import androidx.lifecycle.asLiveData
 import androidx.lifecycle.viewModelScope
 import com.anbui.recipely.core.data.repository.RecipeRepository
+import com.anbui.recipely.core.data.repository.SearchRepository
 import dagger.hilt.android.lifecycle.HiltViewModel
 import kotlinx.coroutines.FlowPreview
 import kotlinx.coroutines.flow.MutableStateFlow
@@ -22,8 +24,12 @@ import javax.inject.Inject
 @HiltViewModel
 class SearchViewModel @Inject constructor(
     private val recipeRepository: RecipeRepository,
+    private val searchRepository: SearchRepository,
+
     savedStateHandle: SavedStateHandle
 ) : ViewModel() {
+    fun searchRecipes(searchText: String) = searchRepository.searchRecipes(searchText).asLiveData()
+    fun searchIngredients(searchText: String) = searchRepository.searchIngredients(searchText).asLiveData()
     private val ingredientParameter = savedStateHandle.get<String?>("ingredientName")
 
     private val _state = MutableStateFlow(SearchScreenState())

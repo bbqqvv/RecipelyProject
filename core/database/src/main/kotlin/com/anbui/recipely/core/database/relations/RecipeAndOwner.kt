@@ -29,7 +29,6 @@ data class RecipeAndOwner(
         entityColumn = "recipe_id"
     )
     val likes: List<LikeEntity>,
-
     @Relation(
         parentColumn = "_id",
         entityColumn = "recipe_id",
@@ -45,34 +44,25 @@ fun RecipeAndOwner.toRecipe(accountId: String?): Recipe {
         imageUrl = recipe.imageUrl,
         description = recipe.description,
         isLike = likes.any { like -> like.accountId == accountId },
-        cookTime = "${
-            steps.sumOf { step -> step.period.toDouble() }.toInt()
-        } Min",
+        cookTime = "${steps.sumOf { step -> step.period.toDouble() }.toInt()} Min",
         servings = recipe.servings,
         totalCalories = ingredients.sumOf { ingredient ->
             ingredient.crossRef.amount.toDouble() * ingredient.ingredient.kcal
-        }
-            .toFloat(),
+        }.toFloat(),
         totalCarb = ingredients.sumOf { ingredient ->
             ingredient.crossRef.amount.toDouble() * ingredient.ingredient.carb
-        }
-            .toFloat(),
+        }.toFloat(),
         totalProtein = ingredients.sumOf { ingredient ->
             ingredient.crossRef.amount.toDouble() * ingredient.ingredient.protein
-        }
-            .toFloat(),
+        }.toFloat(),
         totalFat = ingredients.sumOf { ingredient ->
             ingredient.crossRef.amount.toDouble() * ingredient.ingredient.fat
-        }
-            .toFloat(),
+        }.toFloat(),
         ownerId = owner.id,
-        ownerName = owner.firstName + " " + owner.lastName,
+        ownerName = "${owner.firstName} ${owner.lastName}",
         ownerAvatarUrl = owner.avatarUrl,
         ownerDescription = owner.bio,
-        instructions = steps.map {
-            it.toStep()
-        },
-
+        instructions = steps.map { it.toStep() },
         ingredients = ingredients.map { ingredient ->
             IngredientItem(
                 imageUrl = ingredient.ingredient.imageUrl,
@@ -85,4 +75,3 @@ fun RecipeAndOwner.toRecipe(accountId: String?): Recipe {
         }
     )
 }
-

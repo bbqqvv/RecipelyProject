@@ -1,0 +1,13 @@
+<resources>
+    <string name="featured">Featured</string>
+    <string name="app_name">Recipely</string>
+    <string name="notifications">Notifications</string>
+    <string name="search">Search</string>
+    <string name="home">Home</string>
+    <string name="account">Account</string>
+    <string name="category">Category</string>
+    <string name="see_all">See all</string>
+    <string name="sun">Sun</string>
+    <string name="buy">Buy</string>
+    <string name="popular_recipe">Popular Recipes</string>
+</resources>

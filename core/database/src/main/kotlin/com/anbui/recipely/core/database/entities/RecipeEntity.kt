@@ -4,6 +4,8 @@ import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.ForeignKey
 import androidx.room.PrimaryKey
+import androidx.room.migration.Migration
+import androidx.sqlite.db.SupportSQLiteDatabase
 
 @Entity(
     tableName = "Recipe",
@@ -15,7 +17,10 @@ import androidx.room.PrimaryKey
             onDelete = ForeignKey.CASCADE
         )
     ]
+
 )
+
+
 data class RecipeEntity(
     @PrimaryKey(autoGenerate = false)
     @ColumnInfo(name = "_id")

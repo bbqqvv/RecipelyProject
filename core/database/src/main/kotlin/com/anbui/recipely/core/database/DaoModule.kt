@@ -4,7 +4,6 @@ import com.anbui.recipely.core.database.dao.NotificationDao
 import com.anbui.recipely.core.database.dao.OrderDao
 import com.anbui.recipely.core.database.dao.RecipeDao
 import com.anbui.recipely.core.database.dao.AccountDao
-import com.anbui.recipely.core.database.dao.SearchTextDao
 import dagger.Module
 import dagger.Provides
 import dagger.hilt.InstallIn
@@ -31,7 +30,4 @@ object DaoModule {
     fun provideNotificationDao(db: RecipelyDatabase): NotificationDao =
         db.notificationDao
 
-    @Singleton
-    @Provides
-    fun provideSearchTextDao(db: RecipelyDatabase): SearchTextDao = db.searchText
 }

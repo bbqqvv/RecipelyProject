@@ -47,6 +47,9 @@ data class AccountEntity(
     fun getAddress(): String {
         return "$street, $district, $province"
     }
+    fun getFirstName(): String {
+        return "$firstName $lastName"
+    }
 }
 
 fun Account.toAccountEntity(): AccountEntity {

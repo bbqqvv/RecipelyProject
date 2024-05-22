@@ -10,7 +10,6 @@ import com.anbui.recipely.core.database.entities.OrderStatusEntity
 import com.anbui.recipely.core.database.converter.LocalDateTimeConverter
 import com.anbui.recipely.core.database.converter.UnitTypeConverter
 import com.anbui.recipely.core.database.dao.AccountDao
-import com.anbui.recipely.core.database.dao.SearchTextDao
 import com.anbui.recipely.core.database.entities.AccountEntity
 import com.anbui.recipely.core.database.entities.IngredientEntity
 import com.anbui.recipely.core.database.entities.LikeEntity
@@ -24,7 +23,11 @@ import com.anbui.recipely.core.database.entities.OrderIngredientCrossRef
 import com.anbui.recipely.core.database.entities.RecipeIngredientCrossRef
 
 @Database(
-    version = 1,
+
+
+
+
+    version = 2,
     entities = [
         RecipeEntity::class,
         AccountEntity::class,
@@ -48,5 +51,4 @@ abstract class RecipelyDatabase : RoomDatabase() {
     abstract val recipeDao: RecipeDao
     abstract val orderDao: OrderDao
     abstract val notificationDao: NotificationDao
-    abstract val searchText: SearchTextDao
 }

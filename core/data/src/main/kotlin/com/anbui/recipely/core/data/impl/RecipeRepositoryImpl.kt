@@ -105,7 +105,7 @@ class RecipeRepositoryImpl @Inject constructor(
                 id = UUID.randomUUID().toString(),
                 userId = loggedId,
                 notificationType = NotificationType.Like,
-                message = "${account.firstName} like your recipe",
+                message = "${account.getFirstName()} like your recipe",
                 isRead = false,
                 imageUrl = null
             ).let {

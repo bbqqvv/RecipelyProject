@@ -68,7 +68,7 @@ fun RecipelyLargeCard(
     ) {
         Box(modifier = Modifier.fillMaxSize()) {
             Image(
-                painter = painterResource(id = R.drawable.img_featured_bg),
+                painter = painterResource(id = R.drawable.im),
                 contentDescription = stringResource(R.string.featured_background),
                 modifier = Modifier.fillMaxSize(),
                 contentScale = ContentScale.Crop

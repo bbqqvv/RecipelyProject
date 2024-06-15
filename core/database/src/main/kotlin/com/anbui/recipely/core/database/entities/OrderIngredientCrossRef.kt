@@ -13,3 +13,4 @@ data class OrderIngredientCrossRef(
     @ColumnInfo(name = "ingredient_id") val ingredientId: String,
     val amount: Float
 )
+

@@ -13,3 +13,4 @@ sealed class AccountGraph(val route: String) {
     data object MyOrder : AccountGraph("my_order")
     data object OrderDetail : AccountGraph("order_detail/{$ORDER_ARG}")
 }
+

@@ -1,5 +1,5 @@
-![Untitled design](https://github.com/AnBuiii/Recipely/assets/89350086/53041bfa-6796-40b4-957f-b9c224af3954)
-# Recipely 🍗
+![Uploading Thumbnail.png…]()# Recipely 🍗
+
 **Recipely** is just a SIMPLE recipe app. Built with Modern Android developement tool. Intergrated with ML
 
 ## About

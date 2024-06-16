@@ -39,6 +39,7 @@ import androidx.compose.ui.draw.clip
 import androidx.compose.ui.draw.shadow
 import androidx.compose.ui.input.pointer.pointerInput
 import androidx.compose.ui.layout.ContentScale
+import androidx.compose.ui.platform.LocalContext
 import androidx.compose.ui.platform.LocalFocusManager
 import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.res.stringResource
@@ -46,6 +47,8 @@ import androidx.compose.ui.unit.dp
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
 import coil.compose.AsyncImage
+import coil.request.ImageRequest
+import coil.transform.CircleCropTransformation
 import com.anbui.recipely.core.designsystem.components.StandardDatePickerDialog
 import com.anbui.recipely.core.designsystem.components.StandardTextField
 import com.anbui.recipely.core.designsystem.components.StandardToolbar
@@ -116,7 +119,12 @@ fun EditProfileScreen(
                 .padding(horizontal = SpaceLarge)
         ) {
             AsyncImage(
-                model = uiState.avatar,
+//                model = uiState.avatar,
+                model = ImageRequest.Builder(LocalContext.current)
+                    .data("https://t3.ftcdn.net/jpg/05/26/66/54/240_F_526665446_z51DM27QvvoMZ9Gkyx9gr5mkjSOmjswR.jpg")
+                    .crossfade(true)
+                    .transformations(CircleCropTransformation())
+                    .build(),
                 contentDescription = "",
                 contentScale = ContentScale.Crop,
                 modifier = Modifier
@@ -131,6 +139,7 @@ fun EditProfileScreen(
                         )
                     }
             )
+
 
             Spacer(modifier = Modifier.height(SpaceMedium))
 

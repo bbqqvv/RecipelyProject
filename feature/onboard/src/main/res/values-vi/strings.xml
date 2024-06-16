@@ -1,22 +1,22 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="splash">splash</string>
-    <string name="login">Login</string>
-    <string name="email_address">Email Address</string>
-    <string name="password">Password</string>
-    <string name="or_continue_with">or continue with</string>
-    <string name="create_account">Create account</string>
-    <string name="first_name">First name</string>
-    <string name="first_name_hint">Enter first name</string>
-    <string name="term_of_services">Term of Services</string>
-    <string name="privacy_policy">Privacy Policy</string>
-    <string name="onboarding_title_1">Khám phá các công thức nấu ăn bạn cần</string>
-    <string name="background">background</string>
-    <string name="skip">Skip</string>
-    <string name="next">Next</string>
-    <string name="create_new_account">Create new account</string>
-    <string name="forgot_password">Forgot password</string>
-    <string name="send_email">Send Email</string>
-    <string name="confirm_password_hint">Confirm password</string>
-    <string name="select_interest">Select Interest</string>
+    <string name="splash">Màn chào</string>
+    <string name="login">Đăng nhập</string>
+    <string name="email_address">Địa chỉ Email</string>
+    <string name="password">Mật khẩu</string>
+    <string name="or_continue_with">hoặc tiếp tục với</string>
+    <string name="create_account">Tạo tài khoản</string>
+    <string name="first_name">Tên</string>
+    <string name="first_name_hint">Nhập tên</string>
+    <string name="term_of_services">Điều khoản dịch vụ</string>
+    <string name="privacy_policy">Chính sách bảo mật</string>
+    <string name="onboarding_title_1">Ứng dụng công thức nấu ăn số một Việt Nam</string>
+    <string name="background">Nền</string>
+    <string name="skip">Bỏ qua</string>
+    <string name="next">Tiếp theo</string>
+    <string name="create_new_account">Tạo tài khoản mới</string>
+    <string name="forgot_password">Quên mật khẩu</string>
+    <string name="send_email">Gửi Email</string>
+    <string name="confirm_password_hint">Xác nhận mật khẩu</string>
+    <string name="select_interest">Chọn sở thích</string>
 </resources>

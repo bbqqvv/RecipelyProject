@@ -182,3 +182,6 @@ sealed class ViewMode {
     data object Ingredients : ViewMode()
     data object Instructions : ViewMode()
 }
+
+
+

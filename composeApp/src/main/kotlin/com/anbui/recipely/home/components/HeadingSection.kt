@@ -49,7 +49,7 @@ fun HeadingSection(
                     )
                 )
             }
-            Text(text = name, style = MaterialTheme.typography.headlineSmall)
+//            Text(text = name, style = MaterialTheme.typography.headlineSmall)
         }
         IconButton(onClick = onCartClick) {
             Icon(

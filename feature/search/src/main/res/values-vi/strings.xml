@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="search">Search</string>
-    <string name="see_all">See all</string>
-    <string name="recent_search">Recent search</string>
+    <string name="search">Tìm kiếm</string>
+    <string name="see_all">Xem thêm</string>
+    <string name="recent_search">Tìm kiếm gần đây</string>
 </resources>

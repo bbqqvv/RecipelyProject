@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="street">Street</string>
-    <string name="street_hint">Enter street</string>
-    <string name="district">District</string>
-    <string name="district_hint">Enter district</string>
-    <string name="province_city">Province/City</string>
-    <string name="province_city_hint">Enter province or city</string>
-    <string name="save">Save</string>
-    <string name="location">Location</string>
-    <string name="my_cart">My Cart</string>
-    <string name="total_price">Total price</string>
-    <string name="negative">Negative</string>
-    <string name="plus">Plus</string>
+    <string name="street">Đường</string>
+    <string name="street_hint">Nhập đường</string>
+    <string name="district">Quận/Huyện</string>
+    <string name="district_hint">Nhập quận hoặc huyện</string>
+    <string name="province_city">Tỉnh/Thành phố</string>
+    <string name="province_city_hint">Nhập tỉnh hoặc thành phố</string>
+    <string name="save">Lưu</string>
+    <string name="location">Vị trí</string>
+    <string name="my_cart">Giỏ hàng của tôi</string>
+    <string name="total_price">Tổng giá</string>
+    <string name="negative">Giảm</string>
+    <string name="plus">Tăng</string>
 </resources>

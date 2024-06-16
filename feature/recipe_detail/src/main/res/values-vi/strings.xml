@@ -1,23 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="list">List</string>
-    <string name="step">Step</string>
-    <string name="next_step">Next Step</string>
-    <string name="completed">Completed</string>
-    <string name="animated_counter">animated counter</string>
-    <string name="instructor">Instructor</string>
-    <string name="steps">%1$s Steps</string>
-    <string name="ingredients">Ingredients</string>
-    <string name="items">%1$s items</string>
-    <string name="start_cooking">Start Cooking</string>
+    <string name="list">Danh sách</string>
+    <string name="step">Bước</string>
+    <string name="next_step">Bước tiếp theo</string>
+    <string name="completed">Hoàn thành</string>
+    <string name="animated_counter">bộ đếm hoạt hình</string>
+    <string name="instructor">Hướng dẫn viên</string>
+    <string name="steps">%1$s Bước</string>
+    <string name="ingredients">Nguyên liệu</string>
+    <string name="items">%1$s món</string>
+    <string name="start_cooking">Bắt đầu nấu</string>
     <string name="carbs">%1$sg carbs</string>
-    <string name="proteins">%1$sg proteins</string>
+    <string name="proteins">%1$sg protein</string>
     <string name="kcal">%1$s Kcal</string>
-    <string name="fats">%1$sg fats</string>
-    <string name="servings">Servings</string>
-    <string name="negative">Negative</string>
-    <string name="plus">Plus</string>
-    <string name="add_to_cart">Add To Cart</string>
-    <string name="creator">Creator</string>
-    <string name="see_all">See all</string>
+    <string name="fats">%1$sg chất béo</string>
+    <string name="servings">Khẩu phần</string>
+    <string name="negative">Trừ</string>
+    <string name="plus">Cộng</string>
+    <string name="add_to_cart">Thêm vào giỏ hàng</string>
+    <string name="creator">Người tạo</string>
+    <string name="see_all">Xem tất cả</string>
 </resources>

@@ -1,4 +1,5 @@
-![Uploading Thumbnail.png…]()# Recipely 🍗
+![Uploading Thumbnail.png…]()
+# Recipely 🍗
 
 **Recipely** is just a SIMPLE recipe app. Built with Modern Android developement tool. Intergrated with ML
 

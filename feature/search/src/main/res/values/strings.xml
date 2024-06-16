@@ -3,4 +3,6 @@
     <string name="search">Search</string>
     <string name="see_all">See all</string>
     <string name="recent_search">Recent search</string>
+    <string name="matched_recipes">Matched recipes</string>
+
 </resources>

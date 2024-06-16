@@ -35,7 +35,7 @@ fun LazyListScope.matchSearchSection(
                 .padding(horizontal = SpaceLarge)
         ) {
             Text(
-                text = "Matched recipes",
+                text = stringResource(R.string.matched_recipes),
                 style = MaterialTheme.typography.titleLarge
             )
             Text(

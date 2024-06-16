@@ -97,7 +97,7 @@ Any contributions are welcome! Here are some note
 - Open issue to report a bug and make your suggestion.
 - Fork this repo and do your changes. Remember to follow project's code style.
 - Open PR against `main` branch with nice description and you are good to go 😊.
-Recipely is an open source project developed by [me](https://github.com/AnBuiii). My purpose is to demonstrate my knowleadge in Android Development and share with everyone who interested ☺️. Please do
+Recipely is an open source project developed by [me](https://github.com/vanbuidevTech). My purpose is to demonstrate my knowleadge in Android Development and share with everyone who interested ☺️. Please do
 not use for commercial purposes.
 
 ## License

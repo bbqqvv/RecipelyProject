@@ -27,7 +27,7 @@ Inspired from many recipe app on store, this app was made to simplify all the us
 - [Tensorflow Lite](https://www.tensorflow.org/lite) - Library for deploys models on mobile device
 
 ## Project Structure 🏭
-    com.anbui.recipely         # Root Package
+    com.vanbui.recipely         # Root Package
     
     .
 	├── composeApp             # Project entry point
@@ -99,6 +99,9 @@ Any contributions are welcome! Here are some note
 - Open PR against `main` branch with nice description and you are good to go 😊.
 Recipely is an open source project developed by [me](https://github.com/vanbuidevTech). My purpose is to demonstrate my knowleadge in Android Development and share with everyone who interested ☺️. Please do
 not use for commercial purposes.
+
+## Thank you very much
+[Bùi Lê Hoài An](https://github.com/AnBuiii/AnBuiii) developed this open project
 
 ## License
 

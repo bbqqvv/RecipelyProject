@@ -100,6 +100,9 @@ Any contributions are welcome! Here are some note
 Recipely is an open source project developed by [me](https://github.com/vanbuidevTech). My purpose is to demonstrate my knowleadge in Android Development and share with everyone who interested ☺️. Please do
 not use for commercial purposes.
 
+## Design System
+- Now you can get template for app Recipely here: https://drive.google.com/file/d/1Xj9KG4C_agA1KDTJwqLGZsdKdhHiLNzl/view?usp=sharing
+
 ## Thank you very much
 [Bùi Lê Hoài An](https://github.com/AnBuiii/AnBuiii) developed this open project
 

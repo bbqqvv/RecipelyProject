@@ -3,4 +3,5 @@
     <string name="search">Tìm kiếm</string>
     <string name="see_all">Xem thêm</string>
     <string name="recent_search">Tìm kiếm gần đây</string>
+    <string name="matched_recipes">Công thức phù hợp</string>
 </resources>

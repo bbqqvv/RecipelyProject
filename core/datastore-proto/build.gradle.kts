@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely.core.datastore.proto"
+    namespace = "com.vanbui.recipely.core.datastore.proto"
 }
 
 protobuf {

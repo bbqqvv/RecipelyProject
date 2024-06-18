@@ -1,4 +1,4 @@
-import com.anbui.convention.RecipelyBuildType
+import com.vanbui.convention.RecipelyBuildType
 
 plugins {
     alias(libs.plugins.recipely.android.application)
@@ -8,10 +8,10 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely"
+    namespace = "com.vanbui.recipely"
 
     defaultConfig {
-        applicationId = "com.anbui.recipely" //
+        applicationId = "com.vanbui.recipely" //
         versionCode = 1  //
         versionName = "1.0"
 

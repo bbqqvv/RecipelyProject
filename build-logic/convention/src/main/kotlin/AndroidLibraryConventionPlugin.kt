@@ -1,5 +1,5 @@
-import com.anbui.convension.configureKotlinAndroid
-import com.anbui.convention.configureFlavors
+import com.vanbui.convension.configureKotlinAndroid
+import com.vanbui.convention.configureFlavors
 import com.android.build.gradle.LibraryExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project

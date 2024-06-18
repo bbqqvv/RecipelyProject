@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely.core.testing"
+    namespace = "com.vanbui.recipely.core.testing"
 }
 
 dependencies {

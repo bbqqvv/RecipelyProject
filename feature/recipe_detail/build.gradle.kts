@@ -5,7 +5,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely.feature.recipe_detail"
+    namespace = "com.vanbui.recipely.feature.recipe_detail"
 }
 
 dependencies {

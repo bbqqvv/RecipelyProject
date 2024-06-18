@@ -3,7 +3,7 @@ import org.jetbrains.kotlin.gradle.tasks.KotlinCompile
 plugins {
     `kotlin-dsl`
 }
-group = "com.anbui.recipely.buildlogic"
+group = "com.vanbui.recipely.buildlogic"
 
 // Configure the build-logic plugins to target JDK 17
 // This matches the JDK used to build the project, and is not related to what is running on device.

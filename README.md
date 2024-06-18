@@ -104,7 +104,7 @@ not use for commercial purposes.
 - Now you can get template for app Recipely here: https://drive.google.com/file/d/1Xj9KG4C_agA1KDTJwqLGZsdKdhHiLNzl/view?usp=sharing and let's open it on Figma. 
 
 ## Thank you very much
-[Bùi Lê Hoài An](https://github.com/AnBuiii/AnBuiii) open source this project.
+
 
 ## License
 

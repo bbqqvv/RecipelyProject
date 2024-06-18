@@ -1,4 +1,4 @@
-import com.anbui.convention.configureFlavors
+import com.vanbui.convention.configureFlavors
 import com.android.build.api.dsl.ApplicationExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project

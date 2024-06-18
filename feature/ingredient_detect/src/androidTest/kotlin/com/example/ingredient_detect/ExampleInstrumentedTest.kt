@@ -18,6 +18,6 @@ class ExampleInstrumentedTest {
     fun useAppContext() {
         // Context of the app under test.
         val appContext = InstrumentationRegistry.getInstrumentation().targetContext
-        assertEquals("com.anbui.recipely.feature.ingredient_detect.test", appContext.packageName)
+        assertEquals("com.vanbui.recipely.feature.ingredient_detect.test", appContext.packageName)
     }
 }

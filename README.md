@@ -25,7 +25,7 @@ Inspired from many recipe app on store, this app was made to simplify all the us
 - [Tensorflow Lite](https://www.tensorflow.org/lite) - Library for deploys models on mobile device
 
 ## Project Structure 🏭
-    com.anbui.recipely         # Root Package
+    com.vanbui.recipely         # Root Package
     
     .
 	├── composeApp             # Project entry point

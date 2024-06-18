@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely.feature.account"
+    namespace = "com.vanbui.recipely.feature.account"
 }
 
 dependencies {

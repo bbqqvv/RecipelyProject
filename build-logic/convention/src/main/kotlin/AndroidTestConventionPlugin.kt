@@ -1,5 +1,5 @@
-import com.anbui.convension.configureKotlinAndroid
-import com.anbui.convention.configureGradleManagedDevices
+import com.vanbui.convension.configureKotlinAndroid
+import com.vanbui.convention.configureGradleManagedDevices
 import com.android.build.gradle.TestExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project

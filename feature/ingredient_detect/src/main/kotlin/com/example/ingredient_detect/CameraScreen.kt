@@ -30,11 +30,11 @@ import androidx.compose.ui.res.painterResource
 import androidx.compose.ui.viewinterop.AndroidView
 import androidx.hilt.navigation.compose.hiltViewModel
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import com.anbui.recipely.core.designsystem.theme.SpaceHuge
-import com.anbui.recipely.core.designsystem.theme.SpaceMedium
-import com.anbui.recipely.core.designsystem.theme.SpaceSmall
-import com.anbui.recipely.core.designsystem.theme.TrueWhite
-import com.anbui.recipely.feature.ingredient_detect.R
+import com.vanbui.recipely.core.designsystem.theme.SpaceHuge
+import com.vanbui.recipely.core.designsystem.theme.SpaceMedium
+import com.vanbui.recipely.core.designsystem.theme.SpaceSmall
+import com.vanbui.recipely.core.designsystem.theme.TrueWhite
+import com.vanbui.recipely.feature.ingredient_detect.R
 import com.example.ingredient_detect.permission.isGranted
 import com.example.ingredient_detect.permission.rememberPermissionState
 import com.example.ingredient_detect.permission.shouldShowRationale

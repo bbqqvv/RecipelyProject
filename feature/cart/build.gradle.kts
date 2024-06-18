@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely.feature.cart"
+    namespace = "com.vanbui.recipely.feature.cart"
 }
 
 dependencies {

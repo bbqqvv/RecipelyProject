@@ -29,7 +29,7 @@ kotlin {
 }
 
 android {
-    namespace = "com.anbui.recipely.shared"
+    namespace = "com.vanbui.recipely.shared"
     compileSdk = 34
 
 

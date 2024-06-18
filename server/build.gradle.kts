@@ -5,11 +5,11 @@ plugins {
     application
 }
 
-group = "com.anbui.recipely"
+group = "com.vanbui.recipely"
 version = "1.0.0"
 
 application {
-    mainClass.set("com.anbui.recipely.RecipelyServer")
+    mainClass.set("com.vanbui.recipely.RecipelyServer")
     println("Dio.ktor.development=${extra["development"] ?: "false"}")
     applicationDefaultJvmArgs = listOf("-Dio.ktor.development=${extra["development"] ?: "false"}")
 }

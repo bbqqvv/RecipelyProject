@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely.feature.ingredient_detect"
+    namespace = "com.vanbui.recipely.feature.ingredient_detect"
 }
 
 dependencies {

@@ -7,7 +7,7 @@ android {
     defaultConfig {
         consumerProguardFiles("consumer-proguard-rules.pro")
     }
-    namespace = "com.anbui.recipely.core.datastore"
+    namespace = "com.vanbui.recipely.core.datastore"
 }
 
 dependencies {

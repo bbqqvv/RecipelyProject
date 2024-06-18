@@ -1,4 +1,4 @@
-import com.anbui.convension.configureKotlinJvm
+import com.vanbui.convension.configureKotlinJvm
 import org.gradle.api.Plugin
 import org.gradle.api.Project
 

@@ -1,4 +1,4 @@
-import com.anbui.convension.libs
+import com.vanbui.convension.libs
 import com.android.build.gradle.LibraryExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project
@@ -16,7 +16,7 @@ class AndroidFeatureConventionPlugin : Plugin<Project> {
             extensions.configure<LibraryExtension> {
                 defaultConfig {
                     testInstrumentationRunner =
-                        "com.anbui.recipely.core.testing.RecipelyTestRunner"
+                        "com.vanbui.recipely.core.testing.RecipelyTestRunner"
                 }
             }
 

@@ -4,7 +4,7 @@ plugins {
 }
 
 android {
-    namespace = "com.anbui.recipely.feature.notification"
+    namespace = "com.vanbui.recipely.feature.notification"
 }
 
 dependencies {

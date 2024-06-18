@@ -1,4 +1,4 @@
-import com.anbui.convension.configureKotlinAndroid
+import com.vanbui.convension.configureKotlinAndroid
 import com.android.build.api.dsl.ApplicationExtension
 import org.gradle.api.Plugin
 import org.gradle.api.Project

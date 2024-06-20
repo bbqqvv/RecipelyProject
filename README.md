@@ -73,7 +73,12 @@ Inspired from many recipe app on store, this app was made to simplify all the us
 	|   |   ├── navigation     # navigation system in account feature
 	|   |   ├── components     # account feature UI component
 	|   ├── ...
-	
+
+
+## How to run app?
+- Download source code from github and run it on Android studio + virtual machine must be API 33 or higher.
+- Recommended to use Android Studio 2023 or later. (I am using Version 2024.2.2 koala)
+ 
 ## Architecture	🏢
 This project use a combination of [Multi-module architecture](https://developer.android.com/topic/modularization) and [(Model-View Model-Model](https://developer.android.com/topic/architecture#recommended-app-arch), explain as clean architecture for Android Developement.
 A very well-made example by Android can be found [Now in Android](https://github.com/android/nowinandroid)

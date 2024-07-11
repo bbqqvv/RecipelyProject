@@ -1,4 +1,4 @@
-![My Image]
+![My Image]https://github.com/bbqqvv/RecipelyProject/issues/2#issue-2355497493
 
 # Recipely 🍗
 
